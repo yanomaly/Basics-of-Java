@@ -13,11 +13,20 @@ public class Task5 {
             poem.add(r);
             r = read.readLine();
         }
-        poem.sort(new CompareLength());
-        for (String temp:
-             poem) {
-            write.write(temp + '\n');
-        }
+//        poem.sort(new CompareLength());
+//        poem.sort((o1, o2) -> o1.length() - o2.length());
+        poem.sort(Comparator.comparingInt(String::length));
+//        for (String temp:
+//             poem) {
+//            write.write(temp + '\n');
+//        }
+        poem.forEach(o -> {
+            try {
+                write.write(o + '\n');
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
         write.close();
         read.close();
     }

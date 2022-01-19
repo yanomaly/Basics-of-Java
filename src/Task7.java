@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Task7 {
     public static void main(String[] args) {
-        String str = "{()}";
+        String str = "(())";
         Stack<String> st = new Stack();
         Stack<String> sth = new Stack();
         int count = 0;
@@ -46,3 +46,4 @@ public class Task7 {
          }
      }
  }
+
