@@ -1,3 +1,5 @@
+package CollectionsTasks;
+
 import java.util.*;
 
 public class Task2 {

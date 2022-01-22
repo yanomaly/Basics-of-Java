@@ -1,3 +1,5 @@
+package CollectionsTasks;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -13,7 +15,7 @@ public class Task5 {
             poem.add(r);
             r = read.readLine();
         }
-//        poem.sort(new CompareLength());
+//        poem.sort(new Tasks.CompareLength());
 //        poem.sort((o1, o2) -> o1.length() - o2.length());
         poem.sort(Comparator.comparingInt(String::length));
 //        for (String temp:

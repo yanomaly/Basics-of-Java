@@ -1,3 +1,5 @@
+package CollectionsTasks;
+
 import java.io.*;
 import java.util.*;
 
