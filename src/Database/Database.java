@@ -5,7 +5,7 @@ import java.sql.*;
 public class Database {
     public static  void main(String[] args) throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "Nastya228Tibo");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "password");
         Statement st = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
         PreparedStatement statement = con.prepareStatement("INSERT INTO ? VALUES (?), (?)");
         statement.setString(1, "test_table");
